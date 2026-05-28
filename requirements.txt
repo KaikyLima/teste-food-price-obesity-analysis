@@ -5,6 +5,7 @@ colorama==0.4.6
 comm==0.2.3
 debugpy==1.8.20
 decorator==5.3.1
+duckdb==1.5.3
 et_xmlfile==2.0.0
 executing==2.2.1
 idna==3.16
