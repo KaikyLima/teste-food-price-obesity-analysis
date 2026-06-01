@@ -66,23 +66,23 @@ Time-Series Analysis.
 % ============================================================
 % CCS CONCEPTS — gere em: https://dl.acm.org/ccs/ccs.cfm
 % ============================================================
-% \begin{CCSXML}
-% <ccs2012>
-%   <concept>
-%     <concept_id>10010147.10010257</concept_id>
-%     <concept_desc>Computing methodologies~Machine learning</concept_desc>
-%     <concept_significance>500</concept_significance>
-%   </concept>
-%   <concept>
-%     <concept_id>10010147.10010257.10010293</concept_id>
-%     <concept_desc>Computing methodologies~Supervised learning</concept_desc>
-%     <concept_significance>300</concept_significance>
-%   </concept>
-% </ccs2012>
-% \end{CCSXML}
-%
-% \ccsdesc[500]{Computing methodologies~Machine learning}
-% \ccsdesc[300]{Computing methodologies~Supervised learning}
+\begin{CCSXML}
+<ccs2012>
+  <concept>
+    <concept_id>10010147.10010257</concept_id>
+    <concept_desc>Computing methodologies~Machine learning</concept_desc>
+    <concept_significance>500</concept_significance>
+  </concept>
+  <concept>
+    <concept_id>10010147.10010257.10010293</concept_id>
+    <concept_desc>Computing methodologies~Supervised learning</concept_desc>
+    <concept_significance>300</concept_significance>
+  </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Machine learning}
+\ccsdesc[300]{Computing methodologies~Supervised learning}
 
 \keywords{obesity, food prices, machine learning, classification, supervised learning,
           BRFSS, USDA, data mining}
@@ -95,6 +95,8 @@ Time-Series Analysis.
 % \end{bottomstuff}
 
 \begin{document}
+\begin{bottomstuff}
+\end{bottomstuff}
 \maketitle
 
 % ============================================================
@@ -103,10 +105,7 @@ Time-Series Analysis.
 \section{Introduction}
 
 A obesidade constitui um dos maiores desafios contemporâneos de saúde pública, sendo
-substancialmente agravada por variáveis macroeconômicas. Populações expostas à
-vulnerabilidade econômica tendem a encontrar barreiras de custo no acesso a alimentos de
-elevado valor nutricional, recorrendo a alternativas ultraprocessadas, energeticamente
-densas e nutricionalmente pobres \cite{TODO}.
+substancialmente agravada por variáveis macroeconômicas.
 
 Embora a relação entre custo alimentar e obesidade seja intuitivamente sugerida na
 literatura, a principal lacuna metodológica reside na integração sistemática de bases de
@@ -123,7 +122,6 @@ As seguintes perguntas de pesquisa orientam o estudo:
 \end{itemize}
 
 As hipóteses testadas são:
-
 \begin{itemize}
   \item \textbf{H1:} A elevação sustentada nos preços médios de frutas e vegetais está
   positivamente associada ao aumento das taxas de obesidade.
@@ -134,12 +132,6 @@ As hipóteses testadas são:
   saudáveis e risco de obesidade.
 \end{itemize}
 
-O restante do artigo está organizado da seguinte forma: a Seção~\ref{sec:related}
-apresenta os trabalhos relacionados; a Seção~\ref{sec:data} descreve os conjuntos de dados
-utilizados; a Seção~\ref{sec:method} detalha o pipeline metodológico; a
-Seção~\ref{sec:experiments} apresenta os experimentos e resultados; e a
-Seção~\ref{sec:conclusion} conclui o artigo.
-
 % ============================================================
 % 2. TRABALHOS RELACIONADOS
 % ============================================================
@@ -147,17 +139,8 @@ Seção~\ref{sec:conclusion} conclui o artigo.
 \label{sec:related}
 
 % TODO: expandir com referências reais
-Diversos estudos investigaram a relação entre ambiente alimentar, renda e obesidade.
-\cite{TODO} demonstraram que o custo relativo de alimentos saudáveis versus ultraprocessados
-é um preditor significativo de escolhas alimentares em populações de baixa renda.
-\cite{TODO} utilizaram dados longitudinais do BRFSS para identificar tendências temporais
-de obesidade associadas a fatores socioeconômicos.
+Em desenvolvimento \cite{TODO} 
 
-Do ponto de vista metodológico, abordagens de aprendizado de máquina têm sido aplicadas
-à predição de riscos de saúde pública \cite{TODO}. No entanto, poucos trabalhos integram
-dados econômicos de preços regionais de alimentos com indicadores epidemiológicos de
-obesidade em um pipeline analítico unificado, o que representa a principal contribuição
-deste estudo.
 
 % ============================================================
 % 3. DADOS
@@ -182,7 +165,7 @@ domiciliares, desagregado por área geográfica. Permite análise temporal das o
 custo e cruzamento geoespacial com os dados de saúde do BRFSS.
 
 As principais variáveis de interesse incluem: preço médio mensal por categoria de alimento
-(frutas, vegetais, proteínas, ultraprocessados) por região geográfica.
+(frutas, vegetais, proteínas, processados) por região geográfica.
 
 \subsection{Integração dos Dados}
 
@@ -191,7 +174,7 @@ A integração entre os dois datasets é realizada por meio de chave composta
 variáveis de preço e os indicadores de saúde. A Tabela~\ref{tab:datasets} sumariza as
 características principais dos datasets.
 
-\begin{table}[t]
+\begin{table}[h!]
 \caption{Características dos datasets utilizados}
 \label{tab:datasets}
 \centering
@@ -200,8 +183,8 @@ características principais dos datasets.
 \textbf{Atributo}  & \textbf{BRFSS (CDC)}          & \textbf{FAHMAP (USDA)} \\
 \midrule
 Granularidade      & Estado / ano                  & Região / mês           \\
-Período            & TODO                          & TODO                   \\
-Nº de registros    & TODO                          & TODO                   \\
+Período            & 2012--2018                    & 2012--2018             \\
+Nº de registros    & 110.880                       & 1.020.600              \\
 Variável-alvo      & Taxa de obesidade (\%)        & --                     \\
 \bottomrule
 \end{tabular}
@@ -213,46 +196,35 @@ Variável-alvo      & Taxa de obesidade (\%)        & --                     \\
 \section{Methodology}
 \label{sec:method}
 
-O pipeline analítico proposto é composto por duas etapas sequenciais, conforme ilustrado
-na Figura~\ref{fig:pipeline}.
+O pipeline analítico é composto por três etapas: pré-processamento e integração dos
+dados, análise exploratória e correlacional, e — como trabalho futuro — modelagem
+preditiva supervisionada.
 
-% \begin{figure}[t]
-%   \centering
-%   \includegraphics[width=\columnwidth]{figures/pipeline.pdf}
-%   \caption{Pipeline analítico preditivo proposto.}
-%   \label{fig:pipeline}
-% \end{figure}
+\subsection{Pré-processamento e Integração}
 
-\subsection{Pré-processamento}
+Os dados do BRFSS foram filtrados para registros com indicador de obesidade válido,
+estratificados por faixa de renda e agregados por estado e ano. Os dados do USDA foram
+agregados de granularidade mensal para médias anuais por região geográfica. A integração
+entre os dois datasets foi realizada por meio de chave composta \texttt{(região, ano)},
+resultando em um dataset analítico unificado com variáveis de preço e indicadores de
+saúde alinhados temporalmente. Todo o pipeline foi implementado em Python utilizando
+\texttt{pandas} e \texttt{DuckDB} para consultas SQL sobre os dados brutos.
 
-As etapas de pré-processamento incluem: (i) remoção de registros com valores ausentes nas
-variáveis de interesse; (ii) normalização dos preços pelo índice de inflação (CPI);
-(iii) agregação temporal dos preços mensais em médias anuais por estado; e (iv)
-codificação de variáveis categóricas (faixa de renda, região geográfica).
+\subsection{Análise Exploratória e Correlacional}
 
-\subsection{Etapa 1: Classificação}
+Foram construídas duas variáveis derivadas principais: \textit{Price\_Healthy}, o preço
+médio de alimentos saudáveis (frutas e vegetais), e \textit{Price\_Ratio}, a razão entre
+o preço de alimentos saudáveis e ultraprocessados. A relação entre essas variáveis e as
+taxas de obesidade foi investigada por meio do coeficiente de correlação de Pearson,
+calculado separadamente para cada região geográfica (Nordeste, Centro-Oeste, Sul e
+Oeste). A influência da faixa de renda foi avaliada por meio de correlação entre uma
+codificação ordinal das faixas de renda e as taxas de obesidade, além de análise
+temporal estratificada por grupo de renda.
 
-Na primeira etapa, um modelo de classificação verifica se a variação nos preços de
-alimentos saudáveis exerce influência estatisticamente relevante sobre as taxas de
-obesidade. A variável-alvo é binarizada com base na mediana das taxas estaduais de
-obesidade (\textit{alto} vs. \textit{baixo}).
+\subsection{Plano de Modelagem Preditiva (Trabalho Futuro)}
 
-Os algoritmos avaliados incluem: Regressão Logística, Random Forest e Gradient Boosting
-(XGBoost). A seleção de hiperparâmetros é realizada via validação cruzada estratificada
-com $k = 5$ folds.
+Em desenvolvimento
 
-\subsection{Etapa 2: Regressão}
-
-Confirmada a relação na Etapa 1, um modelo de regressão quantifica a magnitude do impacto
-de cada categoria de preço sobre as taxas de obesidade. Os algoritmos avaliados incluem:
-Regressão Linear com regularização (Ridge/Lasso), Random Forest Regressor e XGBoost
-Regressor.
-
-\subsection{Análise do Fator Moderador: Renda}
-
-Em paralelo, é conduzida uma análise estratificada por faixa de renda para investigar se
-a capacidade econômica do indivíduo atua como fator moderador na relação entre custo de
-alimentos saudáveis e risco de obesidade.
 
 % ============================================================
 % 5. PLANO DE AVALIAÇÃO EXPERIMENTAL
@@ -264,57 +236,46 @@ alimentos saudáveis e risco de obesidade.
 
 \subsection{Configuração Experimental}
 
-Os experimentos serão conduzidos em ambiente Python 3.x, utilizando as bibliotecas
-\texttt{pandas}, \texttt{scikit-learn}, \texttt{xgboost} e \texttt{matplotlib}. O código
-e os notebooks estão disponíveis publicamente em:
-\url{https://github.com/KaikyLima/food-price-obesity-analysis}.
+Em desenvolvimento
 
 \subsection{Métricas de Avaliação}
 
-Para a tarefa de \textbf{classificação}, serão utilizadas as métricas: Acurácia, Precisão,
-Revocação, F1-score e AUC-ROC.
-
-Para a tarefa de \textbf{regressão}, serão utilizadas: RMSE (Root Mean Squared Error),
-MAE (Mean Absolute Error) e $R^2$.
+Em desenvolvimento
 
 \subsection{Hipóteses e Experimentos Planejados}
 
-\begin{itemize}
-  \item \textbf{Experimento 1 (H1):} Treinar classificadores com e sem as features de
-  preço de frutas/vegetais e comparar o desempenho para verificar o poder preditivo dessas
-  variáveis.
-  \item \textbf{Experimento 2 (H2):} Analisar a importância de features (\textit{feature
-  importance}) nos modelos de ensemble para identificar quais categorias de alimentos têm
-  maior impacto na taxa de obesidade.
-  \item \textbf{Experimento 3 (H3):} Stratificar os dados por faixa de renda e comparar
-  os modelos treinados em cada estrato, avaliando se a relação preço--obesidade é modulada
-  pela renda.
-\end{itemize}
+Em desenvolvimento
 
 \subsection{Resultados Preliminares}
 
 % TODO: inserir resultados da análise exploratória aqui
-Esta seção será expandida com os resultados dos experimentos. A análise exploratória
-inicial indicou [TODO: inserir observação preliminar].
+Em desenvolvimento
+
 
 % ============================================================
-% 6. CONCLUSÃO
+% 6. RESULTADOS E DISCUSSÃO
+% ============================================================
+\section{Results and Discussion}
+\label{sec:results}
+
+Em desenvolvimento.
+
+% ============================================================
+% 7. LIMITAÇÕES E AMEAÇAS À VALIDADE
+% ============================================================
+\section{Limitations and Threats to Validity}
+\label{sec:limitations}
+
+Em desenvolvimento.
+
+% ============================================================
+% 8. CONCLUSÃO
 % ============================================================
 \section{Conclusion}
 \label{sec:conclusion}
 
 % TODO: preencher após os experimentos
-
-Este artigo apresentou um pipeline analítico para investigar a relação entre a disparidade
-de preços de alimentos saudáveis e ultraprocessados e os índices de obesidade nos estados
-norte-americanos, utilizando dados públicos do USDA e do CDC/BRFSS. A abordagem proposta
-combina técnicas de classificação e regressão supervisionadas, com análise complementar
-do papel moderador da renda. Os resultados esperados têm potencial de contribuir com
-evidências quantitativas para políticas públicas de saúde alimentar.
-
-Como trabalhos futuros, pretende-se incorporar variáveis adicionais de acesso a alimentos
-(\textit{food deserts}), expandir a análise para recortes temporais mais recentes e
-investigar modelos de aprendizado profundo para séries temporais.
+Em desenvolvimento
 
 % ============================================================
 % AGRADECIMENTOS (opcional)

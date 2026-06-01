@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.1)  1 JUN 2026 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.1)  1 JUN 2026 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -98,7 +98,7 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \bigstrutjot=\dimen168
 )
 \c@theorem=\count292
- (C:\Users\kslima\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ Excluding 'CCSXML' comment. (C:\Users\kslima\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 ) (c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.aux)
@@ -138,73 +138,46 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 98.
+(Font)              <7> on input line 100.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 98.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 98.
+(Font)              <5> on input line 100.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 100.
  (C:\Users\kslima\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-
-LaTeX Warning: Citation `TODO' on page 1 undefined on input line 109.
-
-
-LaTeX Warning: Citation `TODO' on page 1 undefined on input line 151.
-
-
-LaTeX Warning: Citation `TODO' on page 1 undefined on input line 153.
-
-[1
+) [1
 
 {C:/Users/kslima/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `TODO' on page 2 undefined on input line 157.
+LaTeX Warning: Citation `TODO' on page 2 undefined on input line 142.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 198.
+(Font)              <8> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 198.
-
-LaTeX Warning: Reference `fig:pipeline' on page 2 undefined on input line 217.
-
-
-Overfull \hbox (3.29301pt too wide) in paragraph at lines 216--218
-\T1/cmr/m/n/10 O pipeline analítico pro-posto é com-posto por duas eta-pas se-quen-ci-ais, con-forme ilustrado na Figura 0[]. 
- []
-
+(Font)              <6> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 232.
-[2]
-Overfull \hbox (24.23344pt too wide) in paragraph at lines 267--271
-\T1/cmr/m/n/10 Os ex-per-i-men-tos serão con-duzi-dos em am-bi-ente Python 3.x, uti-lizando as bib-liote-cas \T1/cmtt/m/n/10 pandas\T1/cmr/m/n/10 , \T1/cmtt/m/n/10 scikit-learn\T1/cmr/m/n/10 ,
- []
-
-[3] (c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.bbl
+(Font)              <14.4> on input line 212.
+[2] (c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [4] (c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.aux)
+) [3] [4] (c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 2107 strings out of 467871
- 33358 string characters out of 5417893
- 444733 words of memory out of 5000000
- 30974 multiletter control sequences out of 15000+600000
- 642254 words of font info for 72 fonts, out of 8000000 for 9000
+ 2123 strings out of 467871
+ 33738 string characters out of 5417893
+ 443733 words of memory out of 5000000
+ 30989 multiletter control sequences out of 15000+600000
+ 642940 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,65p,492b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.pdf (4 pages, 178107 bytes).
+ <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\kslima\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/kslima/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on c:/Users\kslima\MestradoTeste\teste-food-price-obesity-analysis\KDMiLe_Template\out\template-kdmile-food-obesity.pdf (4 pages, 163032 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
+ 497 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
